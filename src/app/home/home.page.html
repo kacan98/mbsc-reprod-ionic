@@ -1,0 +1,17 @@
+<mbsc-eventcalendar
+  *ngIf="mbscResources && boardCards"
+  [options]="timelineOptions"
+  [view]="view"
+  [resources]="mbscResources"
+  themeVariant="light"
+  [scheduleEventTemplate]="scheduleEventTemplate"
+  [data]="boardCards"
+>
+  <ng-template #scheduleEventTemplate let-data>
+    <ion-card>
+      <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quidem itaque modi corrupti! Quod assumenda.
+      </div>
+    </ion-card>
+  </ng-template>
+</mbsc-eventcalendar>
